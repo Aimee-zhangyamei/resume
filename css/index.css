@@ -350,91 +350,11 @@ html,body{
 
 
 /*第三页内容*/
-.slide3{
-    /*background: url("../images/second-bg.jpg")no-repeat;*/
-    background: url("../images/bg-2.png") no-repeat;
-    background-size: 100% 100%;
-}
-.slide3  img{
-    position: absolute;
-    right: 0.2rem;
-    top: 0.3rem;
-    width: 2rem;
-    border-radius: 50%;
-    /*background-size: contain;*/
-}
-.slide3 .middle{
-    position: absolute;
-    top:2rem;
-    left:50%;
-    width: 6rem;
-    height: 4rem;
-    /*margin-top: -0.8rem;*/
-    margin-left: -2.2rem;
-    /*background: red;*/
-
-}
-.slide3 .middle .top span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2.3rem;
-    height: 2.3rem;
-    background: url("../images/about.png") no-repeat;
-
-}
-.slide3 .middle .top p{
-    display: block;
-    width: 4rem;
-    height: 0.8rem;
-    margin: 0.3rem 0 0 0.08rem;
-    background: url("../images/about-me.png")no-repeat;
-}
-.slide3 .middle .top i{
-    display: block;
-    width: 3.1rem;
-    height: 0.1rem;
-    margin: 0.1rem 0 0 0.3rem;
-    background: #ffffff;
-    border-radius: 0.1rem;
-}
-.slide3 .middle .bottom .out{
-    position: absolute;
-    /*bottom: 0;*/
-    left: 50%;
-    width: 5.4rem;
-    height: 5.4rem;
-    margin-left: -3rem;
-    margin-top: 2.4rem;
-    background: url("../images/my-character.png")no-repeat;
-}
-
-/*第三页动画*/
-#page3 .middle .top span{
-    -webkit-animation: bounceInLeft 2s ;
-    animation: bounceInLeft 2s ;
-}
-#page3 .middle .bottom .out , #page3 .middle .top p{
-    -webkit-animation: bounceInRight 2s 1s ;
-    animation: bounceInRight 2s 1s;
-}
-#page3 .middle .top i{
-     -webkit-animation: zoomIn 1s 2.5s both;
-     animation:zoomIn 1s 2.5s both ;
- }
-#page3 img{
-    -webkit-animation: zoomInDown 3s  both;
-    animation:zoomInDown 3s  both ;
-}
-
-
-/*第四页内容*/
-
-.slide4 {
+.slide3 {
     background: url("../images/last-two-bg.jpg") no-repeat;
     background-size: cover;
 }
-.slide4 ul{
+.slide3 ul{
     position: absolute;
     top:50%;
     left: 50%;
@@ -445,7 +365,7 @@ html,body{
     /*background: #000080;*/
     transform: rotate(45deg);
 }
-.slide4 ul li{
+.slide3 ul li{
     float: left;
     width: 2rem;
     height: 2rem;
@@ -453,19 +373,19 @@ html,body{
     margin: 0.2rem;
     background: rgba(255, 26, 186, 0.87);
 }
-.slide4 ul li:nth-child(1){
+.slide3 ul li:nth-child(1){
     background: #81ddd3;
 }
-.slide4 ul li:nth-child(2){
+.slide3 ul li:nth-child(2){
     background: #ffdd6a;
 }
-.slide4 ul li:nth-child(3){
+.slide3 ul li:nth-child(3){
     background: #3addf7;
 }
-.slide4 ul li:nth-child(4){
+.slide3 ul li:nth-child(4){
     background: #ff9191;
 }
-.slide4>span{
+.slide3>span{
     position: absolute;
     top:0;
     left:0;
@@ -475,33 +395,136 @@ html,body{
     background: url("../images/person.jpg") no-repeat;
     background-size: cover;
 }
-.slide4 ul li span{
+.slide3 ul li span{
     text-align: center;
-    /*margin: 0.5rem;*/
-    width: 1rem;
-    height: 1rem;
+    margin: 0.5rem;
+    width: 1.5rem;
+    height: 2rem;
     font-size: 0.3rem;
     line-height: 0.5rem;
     display: inline-block;
     transform: rotate(-45deg);
 }
-/*第四页动画*/
 
-#page4 ul li:nth-child(2){
+
+/*第三页动画*/
+
+#page3 ul li:nth-child(2){
     -webkit-animation: slideInRight 2s;
     animation: slideInRight 2s;
 }
-#page4 ul li:nth-child(3){
+#page3 ul li:nth-child(3){
     -webkit-animation: slideInLeft 2s;
     animation: slideInLeft 2s;
 }
-#page4 ul li:nth-child(1){
+#page3 ul li:nth-child(1){
     -webkit-animation: fadeInDown 2s;
     animation: fadeInDown 2s;
 }
-#page4 ul li:nth-child(4){
+#page3 ul li:nth-child(4){
     -webkit-animation: fadeInUp 2s;
     animation: fadeInUp 2s;
+}
+
+/*第四页内容*/
+
+.slide4{
+    /*background: url("../images/second-bg.jpg")no-repeat;*/
+    background: url("../images/bg-2.png") no-repeat;
+    background-size: 100% 100%;
+}
+.slide4  img{
+    position: absolute;
+    right: 0.2rem;
+    top: 0.3rem;
+    width: 2rem;
+    border-radius: 50%;
+    /*background-size: contain;*/
+}
+.slide4 .middle{
+    position: absolute;
+    top:2rem;
+    left:50%;
+    width: 6rem;
+    height: 4rem;
+    margin-left: -2.2rem;
+}
+.slide4 .middle .top span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.3rem;
+    height: 2.3rem;
+    background: url("../images/about.png") no-repeat;
+
+}
+.slide4 .middle .top p{
+    display: block;
+    width: 4rem;
+    height: 0.8rem;
+    margin: 0.3rem 0 0 0.08rem;
+    background: url("../images/about-me.png")no-repeat;
+}
+.slide4 .middle .top i{
+    display: block;
+    width: 3.1rem;
+    height: 0.1rem;
+    margin: 0.1rem 0 0 0.3rem;
+    background: #ffffff;
+    border-radius: 0.1rem;
+}
+.slide4 .middle .bottom{
+    position: absolute;
+    left: 50%;
+    width: 5.4rem;
+    height: 5.4rem;
+    margin-left: -3rem;
+    margin-top: 2.4rem;
+}
+.slide4 .middle .bottom .out{
+    position: absolute;
+    top: -0.8rem;
+    left: 50%;
+    width: 5.4rem;
+    height: 5.4rem;
+    margin-left: -3rem;
+    background: url("../images/my-character.png")no-repeat;
+}
+.slide4 .middle .bottom .txt{
+    position: absolute;
+    top: -0.6rem;
+    left: -0.1rem;
+    width: 5rem;
+    height:5rem;
+}
+.slide4 .txt li{
+    width: 100%;
+    /*height: 1rem;*/
+    line-height: 0.6rem;
+    font-size: 0.2rem;
+    color: #ffffff;
+}
+/*第四页动画*/
+
+#page4 .middle .top span{
+    -webkit-animation: bounceInLeft 2s ;
+    animation: bounceInLeft 2s ;
+}
+#page4 .middle .bottom .out , #page4 .middle .top p{
+    -webkit-animation: bounceInRight 2s 1s ;
+    animation: bounceInRight 2s 1s;
+}
+#page4 .middle .top i{
+    -webkit-animation: zoomIn 1s 2.5s both;
+    animation:zoomIn 1s 2.5s both ;
+}
+#page4 img{
+    -webkit-animation: zoomInDown 3s  both;
+    animation:zoomInDown 3s  both ;
+}
+#page4 .txt {
+    -webkit-animation: bounceInUp 2s 3s 1 both;
+    animation: bounceInUp 2s 3s 1 both;
 }
 
 
