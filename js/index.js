@@ -49,11 +49,42 @@ window.setTimeout(function () {
         }
     });
 
-var deW=640,
-    maxWidth=document.documentElement.clientWidth,
-    fontSi=100;
-var res=document.documentElement.style.fontSize=maxWidth/deW*fontSi+"px";
-console.log(res);
+var $cubeBox=$(".cubeBox");
+$cubeBox.attr({
+    rotateX:-30,
+    rotateY:45
+});
+$cubeBox.on("touchstart", function (ev) {
+    var point=ev.changedTouches[0];
+    $(this).attr({
+        strX:point.pageX,
+        strY:point.pageY,
+        changeX:0,
+        changeY:0
+    })
+});
+$cubeBox.on("touchmove", function (ev) {
+    var point=ev.changedTouches[0];
+    $(this).attr({
+        changeX:point.pageX-parseFloat($(this).attr("strX")),
+        changeY:point.pageY-parseFloat($(this).attr("strY"))
+    })
+});
+$cubeBox.on("touchend", function (ev) {
+    var changeX=parseFloat($(this).attr("changeX")),
+        changeY=parseFloat($(this).attr("changeY"));
+    var rotateX=parseFloat($(this).attr("rotateX")),
+        rotateY=parseFloat($(this).attr("rotateY"));
+    if(Math.abs(changeX)>30||Math.abs(changeY)>30){
+        //-->¿Ï¶¨»¬¶¯ÁË
+        rotateX=rotateX+changeY/3;
+        rotateY=rotateY+changeX/3;
+        $(this).attr({
+            rotateX:rotateX,
+            rotateY:rotateY
+        }).css("transform","scale(0.6) rotateX("+rotateX+"deg) rotateY("+rotateY+"deg)")
+    }
+})
 
 
 

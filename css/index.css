@@ -322,7 +322,7 @@ html,body{
 }
 
 
-/*第er页的动画效果*/
+/*第二页的动画效果*/
 #page2 ul  li:nth-of-type(1){
     -webkit-animation: zoomIn 1s 0.2s both;
     animation:zoomIn 1s 0.2s both;
@@ -409,6 +409,24 @@ html,body{
     background: url("../images/my-character.png")no-repeat;
 }
 
+/*第三页动画*/
+#page3 .middle .top span{
+    -webkit-animation: bounceInLeft 2s ;
+    animation: bounceInLeft 2s ;
+}
+#page3 .middle .bottom .out , #page3 .middle .top p{
+    -webkit-animation: bounceInRight 2s 1s ;
+    animation: bounceInRight 2s 1s;
+}
+#page3 .middle .top i{
+     -webkit-animation: zoomIn 1s 2.5s both;
+     animation:zoomIn 1s 2.5s both ;
+ }
+#page3 img{
+    -webkit-animation: zoomInDown 3s  both;
+    animation:zoomInDown 3s  both ;
+}
+
 
 /*第四页内容*/
 
@@ -416,7 +434,6 @@ html,body{
     background: url("../images/last-two-bg.jpg") no-repeat;
     background-size: cover;
 }
-
 .slide4 ul{
     position: absolute;
     top:50%;
@@ -429,7 +446,7 @@ html,body{
     transform: rotate(45deg);
 }
 .slide4 ul li{
-    display: inline-block;
+    float: left;
     width: 2rem;
     height: 2rem;
     border-radius: 0.3rem;
@@ -460,14 +477,35 @@ html,body{
 }
 .slide4 ul li span{
     text-align: center;
-    margin: 0.05rem;
-    width: 100%;
-    height: 100%;
-    font-size: 0.4rem;
+    /*margin: 0.5rem;*/
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.3rem;
     line-height: 0.5rem;
     display: inline-block;
     transform: rotate(-45deg);
 }
+/*第四页动画*/
+
+#page4 ul li:nth-child(2){
+    -webkit-animation: slideInRight 2s;
+    animation: slideInRight 2s;
+}
+#page4 ul li:nth-child(3){
+    -webkit-animation: slideInLeft 2s;
+    animation: slideInLeft 2s;
+}
+#page4 ul li:nth-child(1){
+    -webkit-animation: fadeInDown 2s;
+    animation: fadeInDown 2s;
+}
+#page4 ul li:nth-child(4){
+    -webkit-animation: fadeInUp 2s;
+    animation: fadeInUp 2s;
+}
+
+
+
 /*第五页页面*/
 .slide5{
     background: url("../images/bg-three.jpg") no-repeat;
@@ -546,7 +584,7 @@ html,body{
     padding: 0 0.3rem;
 }
 .content>div div p{
-    font-size: 0.08rem;
+    font-size: 0.3rem;
     color: #ffffff;
 
 
@@ -624,9 +662,85 @@ html,body{
 
 /*第六页页面*/
 .slide6 {
-    background: url("../images/last-bg.jpeg") no-repeat;
+    /*position: relative;*/
+    background: rgba(0,0,0,0.5);
     background-size: 100% 100%;
 }
+.slide6 ul{
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 38.5rem;
+    height: 4rem;
+    background: url("../images/cube-three.jpg") no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+.slide6 ul li{
+    display: inline-block;
+    width: 6.4rem;
+    height: 100%;
+    background-size: cover;
+}
+.slide6 ul li:nth-child(1){
+    background: url("../images/cube-one.jpg") no-repeat;
+    background-size: cover;
+}
+.slide6 ul li:nth-child(2){
+    background: url("../images/cube-two.jpg") no-repeat;
+    background-size: cover;
+}
+.slide6 ul li:nth-child(3){
+    background: url("../images/cube-three.jpg") no-repeat;
+    background-size: cover;
+}
+.slide6 ul li:nth-child(4){
+    background: url("../images/cube-four.jpg") no-repeat;
+    background-size: cover;
+}
+.slide6 ul li:nth-child(5){
+    background: url("../images/cube-five.jpg") no-repeat;
+    background-size: cover;
+}
+.slide6 ul li:nth-child(6){
+    background: url("../images/cube-six.jpg") no-repeat;
+    background-size: cover;
+}
+.slide6 div{
+    position: absolute;
+    bottom: 1rem;
+    left:50% ;
+    margin-left: -3rem;
+    width:6rem ;
+    /*background: red;*/
+}
+.slide6 div p{
+
+    color: white;
+    font-size: 0.2rem;
+    line-height: 0.5rem;
+}
+.slide6 div h3{
+    color: #05eaaf;
+    font-size: 0.5rem;
+    line-height: 0.7rem;
+    text-align: center;
+
+}
+/*第六页动画*/
+#page6 ul {
+    -webkit-animation: move4 10s   infinite  both ;
+   animation: move4 10s infinite both;
+}
+#page6  div p{
+    -webkit-animation: rubberBand 1s 1s 1  both ;
+    animation: rubberBand 1s 1s 1 both;
+}
+#page6 div h3{
+    -webkit-animation: zoomIn 1s 1  both ;
+    animation: zoomIn 1s 1 both;
+}
+
 
 
 /*第七页页面*/
@@ -741,13 +855,23 @@ html,body{
         transform: scale(1.5);
     }
 }
-/*@keyframes move4 {*/
-    /*0%{*/
-        /*transform: rotate(0deg);*/
-    /*}*/
-    /*100%{*/
-        /*transform: rotate(40deg);*/
-    /*}*/
-/*}*/
+@keyframes move4 {
+    0%{
+        transform: translateX(0rem);
+    }
+    25%{
+        transform: translateX(-6.5rem);
+    }
+    50%{
+        transform: translateX(-13rem);
+    }
+    75%{
+        transform: translateX(-19.5rem);
+    }
+    100%{
+        transform: translateX(-26rem);
+    }
+
+}
 
 
