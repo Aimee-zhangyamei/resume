@@ -573,7 +573,7 @@ html,body{
 }
 .content{
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
     left: 50%;
     margin-left:-3rem ;
     width: 6rem;
