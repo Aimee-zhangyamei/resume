@@ -107,8 +107,10 @@ html,body{
 }
 .slide1 .middle .text p{
     position: absolute;
+    left: 50%;
     top: 0.6rem;
-    margin-left: .64rem;
+    width: 2.8rem;
+    margin-left: -1.4rem;
     color: rgba(255, 255, 255, 0.67);
     font-size: 0.1rem;
 }
@@ -492,15 +494,15 @@ html,body{
 }
 .slide4 .middle .bottom .txt{
     position: absolute;
-    top: -0.6rem;
+    top: -0.5rem;
     left: -0.1rem;
     width: 5rem;
     height:5rem;
 }
 .slide4 .txt li{
     width: 100%;
-    /*height: 1rem;*/
-    line-height: 0.6rem;
+    text-indent: 20px;
+    line-height: 0.5rem;
     font-size: 0.2rem;
     color: #ffffff;
 }
@@ -577,7 +579,7 @@ html,body{
     left: 50%;
     margin-left:-3rem ;
     width: 6rem;
-    height: 4rem;
+    height: 3.4rem;
 }
 .content>div{
     position: absolute;
@@ -587,6 +589,7 @@ html,body{
 }
 .content span{
     position: absolute;
+    top: 0.1rem;
     width: 0.5rem;
     height: 0.5rem;
     background: red;
@@ -597,7 +600,7 @@ html,body{
 }
 .content>div div{
     position: absolute;
-    top: -0.14rem;
+    /*top: -0.14rem;*/
     left: 1rem;
     width: 4rem;
     height: 0.7rem;
@@ -632,7 +635,7 @@ html,body{
 }
 .slide5 .content>div i{
     position: absolute;
-    top: 0;
+    top: 0.1rem;
     left: 0;
     width: 0.5rem;
     height: 0.5rem;
