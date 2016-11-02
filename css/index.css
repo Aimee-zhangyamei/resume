@@ -478,7 +478,7 @@ html,body{
     display: block;
     width: 2.8rem;
     height: 0.1rem;
-    margin: 0.1rem 0 0 0.5rem;
+    margin: 0.1rem 0 0 0.3rem;
     background: #ffffff;
     border-radius: 0.1rem;
 }
@@ -488,7 +488,7 @@ html,body{
     width: 5.4rem;
     height: 5.4rem;
     margin-left: -3rem;
-    margin-top: 2.4rem;
+    margin-top: 2rem;
 }
 .slide4 .middle .bottom .out{
     position: absolute;
