@@ -257,7 +257,7 @@ html,body{
 .slide2>div{
     position: absolute;
     top: 2.3rem;
-    right: 0;
+    right: 15%;
     width: 3rem;
     height: 0.6rem;
     background: #05eaaf;
@@ -623,6 +623,7 @@ html,body{
     padding: 0 0.3rem;
 }
 .content>div div p{
+    text-align: center;
     font-size: 0.3rem;
     color: #ffffff;
 
